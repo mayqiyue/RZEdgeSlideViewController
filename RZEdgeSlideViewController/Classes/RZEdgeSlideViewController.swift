@@ -333,31 +333,42 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
     public func setDrawerState(_ state: DrawerState, animated: Bool) {
         let duration: TimeInterval = animated ? drawerAnimationDuration : 0
         
+        let needCallEndAppearanceVCs: NSMutableArray =  NSMutableArray()
+        
         if _state != state {
             switch state {
             case .left:
                 leftViewController?.beginAppearanceTransition(true, animated: animated)
+                needCallEndAppearanceVCs.add(leftViewController!)
                 if isViewVisiable(mainViewController.view) {
                     mainViewController?.beginAppearanceTransition(false, animated: animated)
+                    needCallEndAppearanceVCs.add(mainViewController)
                 }
                 if isViewVisiable(rightContainerView) {
                     rightViewController?.beginAppearanceTransition(false, animated: animated)
+                    needCallEndAppearanceVCs.add(rightViewController!)
                 }
             case .center:
                 mainViewController?.beginAppearanceTransition(true, animated: animated)
+                needCallEndAppearanceVCs.add(mainViewController)
                 if isViewVisiable(leftContaienrView) {
                     leftViewController?.beginAppearanceTransition(false, animated: animated)
+                    needCallEndAppearanceVCs.add(leftViewController!)
                 }
                 if isViewVisiable(rightContainerView) {
                     rightViewController?.beginAppearanceTransition(false, animated: animated)
+                    needCallEndAppearanceVCs.add(rightViewController!)
                 }
             case .right:
                 rightViewController?.beginAppearanceTransition(true, animated: animated)
+                needCallEndAppearanceVCs.add(rightViewController!)
                 if isViewVisiable(mainViewController.view) {
                     mainViewController?.beginAppearanceTransition(false, animated: animated)
+                    needCallEndAppearanceVCs.add(mainViewController)
                 }
                 if isViewVisiable(leftContaienrView) {
                     leftViewController?.beginAppearanceTransition(false, animated: animated)
+                    needCallEndAppearanceVCs.add(leftViewController!)
                 }
             }
         }
@@ -377,10 +388,9 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
                         }
                         self.view.layoutIfNeeded()
         }) { (finished: Bool) -> Void in
-            if self._state != state {
-                self.leftViewController?.endAppearanceTransition()
-                self.rightViewController?.endAppearanceTransition()
-                self.mainViewController?.endAppearanceTransition()
+            for obj in needCallEndAppearanceVCs {
+                let vc : UIViewController = obj as! UIViewController
+                vc.endAppearanceTransition()
             }
             self.delegate?.edgeSlideViewController?(self, didChange: state)
             self._state = state;
@@ -391,7 +401,7 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
     // MARK: - Private Method
     /**************************************************************************/
     
-    final func handlePanGesture(_ sender: UIGestureRecognizer) {
+    final func handlePanGesture(_ sender: UIPanGestureRecognizer) {
         if sender.state == .began {
             _panStartLocation = sender.location(in: view)
             _constraitStartConstant = _leftTrailingConstraint.constant
@@ -399,12 +409,23 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
         
         let delta           = CGFloat(sender.location(in: view).x - _panStartLocation.x)
         let threshold       = CGFloat(0.5)
-        let constant        : CGFloat
+        var constant        : CGFloat
         let drawerState     : DrawerState
         let viewWidht       = self.view.bounds.size.width
+        let velocity        = sender.velocity(in: view)
+        let velocityThres   = CGFloat(400.0)
+        
+        print("verlociy is \(velocity)"  )
         
         constant = min(max(_constraitStartConstant + delta, -viewWidht), viewWidht)
         _leftTrailingConstraint.constant = constant
+        
+        if velocity.x < -velocityThres {
+            constant -= viewWidht;
+        }
+        else if velocity.x > velocityThres {
+            constant += viewWidht;
+        }
         
         drawerState = constant < -viewWidht * threshold ? .right : constant > viewWidht*threshold ? .left : .center
         
