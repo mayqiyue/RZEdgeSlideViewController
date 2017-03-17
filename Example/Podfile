@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'RZEdgeSlideViewController_Example' do
+  pod 'RZEdgeSlideViewController', :path => '../'
+
+  target 'RZEdgeSlideViewController_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
