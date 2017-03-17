@@ -421,10 +421,10 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
         _leftTrailingConstraint.constant = constant
         
         if velocity.x < -velocityThres {
-            constant -= viewWidht;
+            constant -= viewWidht*threshold;
         }
         else if velocity.x > velocityThres {
-            constant += viewWidht;
+            constant += viewWidht*threshold;
         }
         
         drawerState = constant < -viewWidht * threshold ? .right : constant > viewWidht*threshold ? .left : .center
