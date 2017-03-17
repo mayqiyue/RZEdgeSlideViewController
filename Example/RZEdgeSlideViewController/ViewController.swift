@@ -10,15 +10,36 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    var viewTag : NSString?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        self.view.isUserInteractionEnabled = true
+        view.backgroundColor = UIColor.white
     }
-
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(" viewWillAppear \(self.viewTag ?? "")")
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        print("viewDidAppear \(self.viewTag ?? "")")
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        print(" viewWillDisappear \(self.viewTag ?? "")")
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        super.viewDidDisappear(animated)
+        print("viewDidDisappear \(self.viewTag ?? "")")
+    }
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
-
 }
 

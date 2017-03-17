@@ -1,0 +1,707 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06AEE8EB9B0121D55AA87A43A49ECE9B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		2F21825915DE0B7FA50E421B26FCD492 /* Pods-RZEdgeSlideViewController_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = E84B04E47DCBDB7FE435263CFB20C873 /* Pods-RZEdgeSlideViewController_Example-dummy.m */; };
+		3495F9462F4E184F2C18E9714D87AA7D /* Pods-RZEdgeSlideViewController_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F6523DFAD079DA5A85EB7CFD2329CEE6 /* Pods-RZEdgeSlideViewController_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		4447C0395F8CD22FEB13DB1A72EE81AF /* RZEdgeSlideViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6D811025A03A0A5309C03CBBFFD3143C /* RZEdgeSlideViewController.swift */; };
+		67C6F2053019ACBF389A0C4297A260DD /* Pods-RZEdgeSlideViewController_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EB69484199A54FDCA1E072E51D664EBD /* Pods-RZEdgeSlideViewController_Tests-dummy.m */; };
+		7DFC04D12D1042714C0F44753C47C101 /* Pods-RZEdgeSlideViewController_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 2FAE808E7D96943534FE8AE08E651331 /* Pods-RZEdgeSlideViewController_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		8E8C790110B921084E2F0A2B97196BA4 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		BE6B6113ACEC7BB6D27C575DCB70F77B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		E0616EFA6B70C2379E17F54E1D912BB0 /* RZEdgeSlideViewController-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 9654504096327B172E6B20CDC7AA6076 /* RZEdgeSlideViewController-dummy.m */; };
+		E433CBD35425C2A1F4A98671E97C3F2E /* RZEdgeSlideViewController-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5B0575CBE17F9B6F5599675F3ABF577B /* RZEdgeSlideViewController-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		2BB3CB3292B5A6807119EAE4E6CEF849 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 049BDF5D5408DD11AEDCA6D51BC1AD3E;
+			remoteInfo = RZEdgeSlideViewController;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10520D312071660DDD817BA8F7D08B8B /* Pods_RZEdgeSlideViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RZEdgeSlideViewController_Tests.framework; path = "Pods-RZEdgeSlideViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1375BF1308981A6804353168E17CDB6F /* Pods-RZEdgeSlideViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RZEdgeSlideViewController_Tests.modulemap"; sourceTree = "<group>"; };
+		21157676C8A5C437D6D28CCC8C90F14B /* Pods-RZEdgeSlideViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RZEdgeSlideViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2872CEE9BCF0079D93258919156F5F4D /* Pods-RZEdgeSlideViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RZEdgeSlideViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		2FAE808E7D96943534FE8AE08E651331 /* Pods-RZEdgeSlideViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RZEdgeSlideViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
+		38924789EE6201453996FD57675731BE /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		407EA3A86AAA5B0F4B74B84A6DCB01D9 /* Pods-RZEdgeSlideViewController_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RZEdgeSlideViewController_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		41EB02075A36D51CF4F83973CA53DC18 /* Pods-RZEdgeSlideViewController_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RZEdgeSlideViewController_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		466335C2FE727108B3327B5AE748E905 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51E226ED6040B4545BC91C477EF5D8D7 /* Pods-RZEdgeSlideViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RZEdgeSlideViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
+		5ABCD6EE02920492E740C59EF51FA607 /* RZEdgeSlideViewController.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RZEdgeSlideViewController.xcconfig; sourceTree = "<group>"; };
+		5B0575CBE17F9B6F5599675F3ABF577B /* RZEdgeSlideViewController-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RZEdgeSlideViewController-umbrella.h"; sourceTree = "<group>"; };
+		61773CD9B903E9577EEB1D9FCA68CDBD /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6B1188CC035212D0854E0015544ECB2C /* Pods-RZEdgeSlideViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RZEdgeSlideViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		6D811025A03A0A5309C03CBBFFD3143C /* RZEdgeSlideViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RZEdgeSlideViewController.swift; sourceTree = "<group>"; };
+		72EF5028F5E41AB5075FC12E1D828C23 /* Pods-RZEdgeSlideViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RZEdgeSlideViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
+		8928B71053073389E35B7A24114A5899 /* Pods-RZEdgeSlideViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RZEdgeSlideViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9654504096327B172E6B20CDC7AA6076 /* RZEdgeSlideViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RZEdgeSlideViewController-dummy.m"; sourceTree = "<group>"; };
+		982FFBEC4083B0798AD4EBAD9780CE49 /* Pods-RZEdgeSlideViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RZEdgeSlideViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		A618D3142D42F81EF6552ECAB3FA89B2 /* Pods-RZEdgeSlideViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RZEdgeSlideViewController_Example.modulemap"; sourceTree = "<group>"; };
+		A8803D556F54A1C09488D3BE54E6353A /* Pods-RZEdgeSlideViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RZEdgeSlideViewController_Example-resources.sh"; sourceTree = "<group>"; };
+		AF22581C9100CF2F66E153BA074D8BF3 /* RZEdgeSlideViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RZEdgeSlideViewController-prefix.pch"; sourceTree = "<group>"; };
+		BD734C1777167781869F45EB1E119E4A /* Pods-RZEdgeSlideViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RZEdgeSlideViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		C1C27D16E376AC7D1258BEBA84F6394D /* Pods-RZEdgeSlideViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RZEdgeSlideViewController_Tests-resources.sh"; sourceTree = "<group>"; };
+		C47FE562EFD1337AF8E6501E28524232 /* Pods_RZEdgeSlideViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RZEdgeSlideViewController_Example.framework; path = "Pods-RZEdgeSlideViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		E133D3AE22124E5DE63D842C8BDEB5E2 /* RZEdgeSlideViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RZEdgeSlideViewController.framework; path = RZEdgeSlideViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E84B04E47DCBDB7FE435263CFB20C873 /* Pods-RZEdgeSlideViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RZEdgeSlideViewController_Example-dummy.m"; sourceTree = "<group>"; };
+		EB69484199A54FDCA1E072E51D664EBD /* Pods-RZEdgeSlideViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RZEdgeSlideViewController_Tests-dummy.m"; sourceTree = "<group>"; };
+		F2D6FD174B895970CFACD099EFC8B663 /* RZEdgeSlideViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RZEdgeSlideViewController.modulemap; sourceTree = "<group>"; };
+		F6523DFAD079DA5A85EB7CFD2329CEE6 /* Pods-RZEdgeSlideViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RZEdgeSlideViewController_Example-umbrella.h"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		682E93379DE7D7B4AF831E155168A9F5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BE6B6113ACEC7BB6D27C575DCB70F77B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		8DC23031BD63F120365F0FC5DCB5C429 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8E8C790110B921084E2F0A2B97196BA4 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F6D93E8F2ECC92B61B1B8EEF53F87E33 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				06AEE8EB9B0121D55AA87A43A49ECE9B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		017D7AFDFEC7CD2AE7B0591DAD3F1F92 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C47FE562EFD1337AF8E6501E28524232 /* Pods_RZEdgeSlideViewController_Example.framework */,
+				10520D312071660DDD817BA8F7D08B8B /* Pods_RZEdgeSlideViewController_Tests.framework */,
+				E133D3AE22124E5DE63D842C8BDEB5E2 /* RZEdgeSlideViewController.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		09C525EAB2B456F6EB20319E33AD77BC /* RZEdgeSlideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				DDE64E060E6AD87F439E2CFC8FAE4962 /* Classes */,
+			);
+			name = RZEdgeSlideViewController;
+			path = RZEdgeSlideViewController;
+			sourceTree = "<group>";
+		};
+		0E302172499502CA98A240C0290D86F8 /* Development Pods */ = {
+			isa = PBXGroup;
+			children = (
+				33B37AB15B625953D5A2865AC224B66A /* RZEdgeSlideViewController */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		132717A86379AA049FD3ECCC8CD8F824 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A0845C81D49EB56DBDF537BEE3601E77 /* Pods-RZEdgeSlideViewController_Example */,
+				B5C40B5D41469960E8FD9A4D1A5392C0 /* Pods-RZEdgeSlideViewController_Tests */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		33B37AB15B625953D5A2865AC224B66A /* RZEdgeSlideViewController */ = {
+			isa = PBXGroup;
+			children = (
+				09C525EAB2B456F6EB20319E33AD77BC /* RZEdgeSlideViewController */,
+				68E80F3F64F1727E88491AB3F6C5D43C /* Support Files */,
+			);
+			name = RZEdgeSlideViewController;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		68E80F3F64F1727E88491AB3F6C5D43C /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				61773CD9B903E9577EEB1D9FCA68CDBD /* Info.plist */,
+				F2D6FD174B895970CFACD099EFC8B663 /* RZEdgeSlideViewController.modulemap */,
+				5ABCD6EE02920492E740C59EF51FA607 /* RZEdgeSlideViewController.xcconfig */,
+				9654504096327B172E6B20CDC7AA6076 /* RZEdgeSlideViewController-dummy.m */,
+				AF22581C9100CF2F66E153BA074D8BF3 /* RZEdgeSlideViewController-prefix.pch */,
+				5B0575CBE17F9B6F5599675F3ABF577B /* RZEdgeSlideViewController-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RZEdgeSlideViewController";
+			sourceTree = "<group>";
+		};
+		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				0E302172499502CA98A240C0290D86F8 /* Development Pods */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				017D7AFDFEC7CD2AE7B0591DAD3F1F92 /* Products */,
+				132717A86379AA049FD3ECCC8CD8F824 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		A0845C81D49EB56DBDF537BEE3601E77 /* Pods-RZEdgeSlideViewController_Example */ = {
+			isa = PBXGroup;
+			children = (
+				38924789EE6201453996FD57675731BE /* Info.plist */,
+				A618D3142D42F81EF6552ECAB3FA89B2 /* Pods-RZEdgeSlideViewController_Example.modulemap */,
+				2872CEE9BCF0079D93258919156F5F4D /* Pods-RZEdgeSlideViewController_Example-acknowledgements.markdown */,
+				41EB02075A36D51CF4F83973CA53DC18 /* Pods-RZEdgeSlideViewController_Example-acknowledgements.plist */,
+				E84B04E47DCBDB7FE435263CFB20C873 /* Pods-RZEdgeSlideViewController_Example-dummy.m */,
+				72EF5028F5E41AB5075FC12E1D828C23 /* Pods-RZEdgeSlideViewController_Example-frameworks.sh */,
+				A8803D556F54A1C09488D3BE54E6353A /* Pods-RZEdgeSlideViewController_Example-resources.sh */,
+				F6523DFAD079DA5A85EB7CFD2329CEE6 /* Pods-RZEdgeSlideViewController_Example-umbrella.h */,
+				982FFBEC4083B0798AD4EBAD9780CE49 /* Pods-RZEdgeSlideViewController_Example.debug.xcconfig */,
+				51E226ED6040B4545BC91C477EF5D8D7 /* Pods-RZEdgeSlideViewController_Example.release.xcconfig */,
+			);
+			name = "Pods-RZEdgeSlideViewController_Example";
+			path = "Target Support Files/Pods-RZEdgeSlideViewController_Example";
+			sourceTree = "<group>";
+		};
+		B5C40B5D41469960E8FD9A4D1A5392C0 /* Pods-RZEdgeSlideViewController_Tests */ = {
+			isa = PBXGroup;
+			children = (
+				466335C2FE727108B3327B5AE748E905 /* Info.plist */,
+				1375BF1308981A6804353168E17CDB6F /* Pods-RZEdgeSlideViewController_Tests.modulemap */,
+				21157676C8A5C437D6D28CCC8C90F14B /* Pods-RZEdgeSlideViewController_Tests-acknowledgements.markdown */,
+				BD734C1777167781869F45EB1E119E4A /* Pods-RZEdgeSlideViewController_Tests-acknowledgements.plist */,
+				EB69484199A54FDCA1E072E51D664EBD /* Pods-RZEdgeSlideViewController_Tests-dummy.m */,
+				407EA3A86AAA5B0F4B74B84A6DCB01D9 /* Pods-RZEdgeSlideViewController_Tests-frameworks.sh */,
+				C1C27D16E376AC7D1258BEBA84F6394D /* Pods-RZEdgeSlideViewController_Tests-resources.sh */,
+				2FAE808E7D96943534FE8AE08E651331 /* Pods-RZEdgeSlideViewController_Tests-umbrella.h */,
+				6B1188CC035212D0854E0015544ECB2C /* Pods-RZEdgeSlideViewController_Tests.debug.xcconfig */,
+				8928B71053073389E35B7A24114A5899 /* Pods-RZEdgeSlideViewController_Tests.release.xcconfig */,
+			);
+			name = "Pods-RZEdgeSlideViewController_Tests";
+			path = "Target Support Files/Pods-RZEdgeSlideViewController_Tests";
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DDE64E060E6AD87F439E2CFC8FAE4962 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				6D811025A03A0A5309C03CBBFFD3143C /* RZEdgeSlideViewController.swift */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		1C53308707681995D4B484B7889BF423 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E433CBD35425C2A1F4A98671E97C3F2E /* RZEdgeSlideViewController-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		34B7C958E3D188EC5433B01069E437C0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7DFC04D12D1042714C0F44753C47C101 /* Pods-RZEdgeSlideViewController_Tests-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AB7CCE67D68362F0DBDCD4705E77074E /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3495F9462F4E184F2C18E9714D87AA7D /* Pods-RZEdgeSlideViewController_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		049BDF5D5408DD11AEDCA6D51BC1AD3E /* RZEdgeSlideViewController */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FC92BB0C9FE6E21CB535C36C29390C6E /* Build configuration list for PBXNativeTarget "RZEdgeSlideViewController" */;
+			buildPhases = (
+				A91F1342C3E385D8C3DC006CAC59E74D /* Sources */,
+				F6D93E8F2ECC92B61B1B8EEF53F87E33 /* Frameworks */,
+				1C53308707681995D4B484B7889BF423 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RZEdgeSlideViewController;
+			productName = RZEdgeSlideViewController;
+			productReference = E133D3AE22124E5DE63D842C8BDEB5E2 /* RZEdgeSlideViewController.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		6875411453775F8749EE722B09AC24C9 /* Pods-RZEdgeSlideViewController_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 33965ED8449F9FAE84C78953206835DE /* Build configuration list for PBXNativeTarget "Pods-RZEdgeSlideViewController_Tests" */;
+			buildPhases = (
+				5F1E9085B45F4D8F89B72A0E988C9FF9 /* Sources */,
+				682E93379DE7D7B4AF831E155168A9F5 /* Frameworks */,
+				34B7C958E3D188EC5433B01069E437C0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-RZEdgeSlideViewController_Tests";
+			productName = "Pods-RZEdgeSlideViewController_Tests";
+			productReference = 10520D312071660DDD817BA8F7D08B8B /* Pods_RZEdgeSlideViewController_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F144F5083713596FEE300010115CA54B /* Pods-RZEdgeSlideViewController_Example */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = C0F84535EA7A160B74E0AB653DBDCEE2 /* Build configuration list for PBXNativeTarget "Pods-RZEdgeSlideViewController_Example" */;
+			buildPhases = (
+				023808FDCD892007C70F3C55699AD90E /* Sources */,
+				8DC23031BD63F120365F0FC5DCB5C429 /* Frameworks */,
+				AB7CCE67D68362F0DBDCD4705E77074E /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				519257D340D087B3F8E93DF77F99BDF6 /* PBXTargetDependency */,
+			);
+			name = "Pods-RZEdgeSlideViewController_Example";
+			productName = "Pods-RZEdgeSlideViewController_Example";
+			productReference = C47FE562EFD1337AF8E6501E28524232 /* Pods_RZEdgeSlideViewController_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0700;
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = 017D7AFDFEC7CD2AE7B0591DAD3F1F92 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F144F5083713596FEE300010115CA54B /* Pods-RZEdgeSlideViewController_Example */,
+				6875411453775F8749EE722B09AC24C9 /* Pods-RZEdgeSlideViewController_Tests */,
+				049BDF5D5408DD11AEDCA6D51BC1AD3E /* RZEdgeSlideViewController */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		023808FDCD892007C70F3C55699AD90E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2F21825915DE0B7FA50E421B26FCD492 /* Pods-RZEdgeSlideViewController_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F1E9085B45F4D8F89B72A0E988C9FF9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				67C6F2053019ACBF389A0C4297A260DD /* Pods-RZEdgeSlideViewController_Tests-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		A91F1342C3E385D8C3DC006CAC59E74D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E0616EFA6B70C2379E17F54E1D912BB0 /* RZEdgeSlideViewController-dummy.m in Sources */,
+				4447C0395F8CD22FEB13DB1A72EE81AF /* RZEdgeSlideViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		519257D340D087B3F8E93DF77F99BDF6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RZEdgeSlideViewController;
+			target = 049BDF5D5408DD11AEDCA6D51BC1AD3E /* RZEdgeSlideViewController */;
+			targetProxy = 2BB3CB3292B5A6807119EAE4E6CEF849 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1964D02EB0EA22AA587BB5DA514A8DCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ABCD6EE02920492E740C59EF51FA607 /* RZEdgeSlideViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RZEdgeSlideViewController/RZEdgeSlideViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RZEdgeSlideViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RZEdgeSlideViewController/RZEdgeSlideViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = RZEdgeSlideViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1FD7076B832966CAE55F3E42FA4FBE58 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5ABCD6EE02920492E740C59EF51FA607 /* RZEdgeSlideViewController.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/RZEdgeSlideViewController/RZEdgeSlideViewController-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RZEdgeSlideViewController/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/RZEdgeSlideViewController/RZEdgeSlideViewController.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = RZEdgeSlideViewController;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		4D1DA04305E3DA33E81A023A7B2B5419 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 982FFBEC4083B0798AD4EBAD9780CE49 /* Pods-RZEdgeSlideViewController_Example.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RZEdgeSlideViewController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RZEdgeSlideViewController_Example/Pods-RZEdgeSlideViewController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RZEdgeSlideViewController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		8DED8AD26D381A6ACFF202E5217EC498 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9E1E4E48AF2EAB23169E611BF694090A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		B5A7259A9E7C690A73CB9F55D1089A14 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8928B71053073389E35B7A24114A5899 /* Pods-RZEdgeSlideViewController_Tests.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RZEdgeSlideViewController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RZEdgeSlideViewController_Tests/Pods-RZEdgeSlideViewController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RZEdgeSlideViewController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		E2D0A8BB8AF13A85D0B891C6EED4D146 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 51E226ED6040B4545BC91C477EF5D8D7 /* Pods-RZEdgeSlideViewController_Example.release.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RZEdgeSlideViewController_Example/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RZEdgeSlideViewController_Example/Pods-RZEdgeSlideViewController_Example.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RZEdgeSlideViewController_Example;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		EBAC737C9843B89884C4E83532D40366 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6B1188CC035212D0854E0015544ECB2C /* Pods-RZEdgeSlideViewController_Tests.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-RZEdgeSlideViewController_Tests/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-RZEdgeSlideViewController_Tests/Pods-RZEdgeSlideViewController_Tests.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_RZEdgeSlideViewController_Tests;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9E1E4E48AF2EAB23169E611BF694090A /* Debug */,
+				8DED8AD26D381A6ACFF202E5217EC498 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		33965ED8449F9FAE84C78953206835DE /* Build configuration list for PBXNativeTarget "Pods-RZEdgeSlideViewController_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EBAC737C9843B89884C4E83532D40366 /* Debug */,
+				B5A7259A9E7C690A73CB9F55D1089A14 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		C0F84535EA7A160B74E0AB653DBDCEE2 /* Build configuration list for PBXNativeTarget "Pods-RZEdgeSlideViewController_Example" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D1DA04305E3DA33E81A023A7B2B5419 /* Debug */,
+				E2D0A8BB8AF13A85D0B891C6EED4D146 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FC92BB0C9FE6E21CB535C36C29390C6E /* Build configuration list for PBXNativeTarget "RZEdgeSlideViewController" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FD7076B832966CAE55F3E42FA4FBE58 /* Debug */,
+				1964D02EB0EA22AA587BB5DA514A8DCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}

@@ -1,0 +1,6 @@
+framework module RZEdgeSlideViewController {
+  umbrella header "RZEdgeSlideViewController-umbrella.h"
+
+  export *
+  module * { export * }
+}

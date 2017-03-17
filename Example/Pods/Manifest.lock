@@ -1,0 +1,16 @@
+PODS:
+  - RZEdgeSlideViewController (0.1.0)
+
+DEPENDENCIES:
+  - RZEdgeSlideViewController (from `../`)
+
+EXTERNAL SOURCES:
+  RZEdgeSlideViewController:
+    :path: ../
+
+SPEC CHECKSUMS:
+  RZEdgeSlideViewController: 3d1d5aa8fdd1a3389721f57f8f0a5bd3985d774c
+
+PODFILE CHECKSUM: e0c6acc7dc96478ff93cc96456c6859fa9ea7fbd
+
+COCOAPODS: 1.2.0
