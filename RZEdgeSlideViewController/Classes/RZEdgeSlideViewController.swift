@@ -415,8 +415,6 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
         let velocity        = sender.velocity(in: view)
         let velocityThres   = CGFloat(400.0)
         
-        print("verlociy is \(velocity)"  )
-        
         constant = min(max(_constraitStartConstant + delta, -viewWidht), viewWidht)
         _leftTrailingConstraint.constant = constant
         
