@@ -14,6 +14,7 @@ import RZEdgeSlideViewController
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
+    var drawVC: RZEdgeSlideViewController?
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
@@ -31,15 +32,34 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         rightVC.view.backgroundColor = UIColor.blue
         rightVC.viewTag = "right"
         
-        drawerController.mainViewController = UINavigationController(
-            rootViewController: mainViewController
-        )
+        drawerController.mainViewController = mainViewController
         drawerController.leftViewController = leftVC
         drawerController.rightViewController = rightVC
+        
+        let leftButotn  = UIButton.init(frame: CGRect(x: 0, y: 100, width: 44, height: 44))
+        leftButotn.setTitle("left", for: UIControlState.normal)
+        leftButotn.backgroundColor = UIColor.red;
+        leftButotn.addTarget(self, action: #selector(leftAction(_:)), for: .touchUpInside)
+        mainViewController.view.addSubview(leftButotn)
+        
+        let centerButton  = UIButton.init(frame: CGRect(x: 50, y: 100, width: 44, height: 44))
+        centerButton.setTitle("center", for: UIControlState.normal)
+        centerButton.backgroundColor = UIColor.red;
+        centerButton.addTarget(self, action: #selector(centerAction(_:)), for: .touchUpInside)
+        mainViewController.view.addSubview(centerButton)
+        
+        let rightButton  = UIButton.init(frame: CGRect(x: 100, y: 100, width: 44, height: 44))
+        rightButton.setTitle("right", for: UIControlState.normal)
+        rightButton.backgroundColor = UIColor.red;
+        rightButton.addTarget(self, action: #selector(rightAction(_:)), for: .touchUpInside)
+        mainViewController.view.addSubview(rightButton)
         
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = drawerController
         window?.makeKeyAndVisible()
+        
+        self.drawVC = drawerController
+        
         return true
     }
 
@@ -65,6 +85,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    @objc private func leftAction(_ sender: UIButton) {
+        self.drawVC?.setDrawerState(.left, animated: true)
+    }
+    
+    @objc private func centerAction(_ sender: UIButton) {
+        self.drawVC?.setDrawerState(.center, animated: true)
+        
+    }
 
+    @objc private func rightAction(_ sender: UIButton) {
+        self.drawVC?.setDrawerState(.right, animated: true)
+    }
 }
 

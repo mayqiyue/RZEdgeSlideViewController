@@ -86,7 +86,7 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
     
     public var drawerState: DrawerState {
         get {return _state}
-        set {setDrawerState(drawerState, animated: true) }
+        set {setDrawerState(newValue, animated: true) }
     }
     
     @IBInspectable public var drawerWidth: CGFloat = UIScreen.main.bounds.size.width {
