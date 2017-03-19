@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RZEdgeSlideViewController'
-  s.version          = '0.1.0'
+  s.version          = '0.2.0'
   s.summary          = 'This is a SnapChat 2017 swipe style view controller. inspied by SnapChat'
 
 # This description is used to generate tags and improve search results.
@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
   s.homepage         = 'https://github.com/mayqiyue/RZEdgeSlideViewController'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'mayqiyue' => 'mayqiyue@qq.com' }
+  s.author           = { 'mayqiyue' => 'xu20121013@gmail.com' }
   s.source           = { :git => 'https://github.com/mayqiyue/RZEdgeSlideViewController.git', :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
