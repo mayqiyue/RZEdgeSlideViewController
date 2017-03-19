@@ -11,7 +11,7 @@ import RZEdgeSlideViewController
 
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, RZEdgeSlideViewControllerDelegate {
 
     var window: UIWindow?
     var drawVC: RZEdgeSlideViewController?
@@ -20,6 +20,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         let drawerController  = RZEdgeSlideViewController()
+        drawerController.delegate = self
         
         let mainViewController  = ViewController()
         mainViewController.viewTag = "main"
@@ -96,6 +97,18 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     @objc private func rightAction(_ sender: UIButton) {
         self.drawVC?.setDrawerState(.right, animated: true)
+    }
+    
+    public func edgeSlideViewController(_ viewController: RZEdgeSlideViewController, currentState state: RZEdgeSlideViewController.DrawerState, percent: CGFloat) {
+        print(" edgeSlideViewController currentState is: \(state.rawValue) percnet is \(percent)")
+    }
+    
+    public func edgeSlideViewController(_ viewController: RZEdgeSlideViewController, willChange state: RZEdgeSlideViewController.DrawerState) {
+        print(" edgeSlideViewController will change to state \(state.rawValue)")
+    }
+    
+    public func edgeSlideViewController(_ viewController: RZEdgeSlideViewController, didChange state: RZEdgeSlideViewController.DrawerState) {
+        print(" edgeSlideViewController did change to state \(state.rawValue)")
     }
 }
 

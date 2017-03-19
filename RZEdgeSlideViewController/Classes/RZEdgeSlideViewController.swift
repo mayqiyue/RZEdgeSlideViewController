@@ -429,13 +429,14 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
         
         switch sender.state {
         case .changed:
-            break
+            let percent = CGFloat(min(max(round(fabs(delta)/viewWidht * 100.0) / 100, 0.01), 0.99))
+            self.delegate?.edgeSlideViewController?(self, currentState: self.drawerState, percent: percent)
         case .ended, .cancelled:
             setDrawerState(drawerState, animated: true)
         default:
             break
         }
-        self.delegate?.edgeSlideViewController?(self, currentState: self.drawerState, percent: max(min(0.99, 1.0 - fabs(constant)/constant), 0.01))
+        
     }
     
     private func isViewVisiable(_ view: UIView) -> Bool {
