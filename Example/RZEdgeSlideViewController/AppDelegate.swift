@@ -34,8 +34,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RZEdgeSlideViewController
         rightVC.viewTag = "right"
         
         drawerController.mainViewController = mainViewController
-        drawerController.leftViewController = leftVC
-        drawerController.rightViewController = rightVC
+        drawerController.leftViewController = UINavigationController.init(rootViewController: leftVC)
+        drawerController.rightViewController = UINavigationController.init(rootViewController: rightVC)
         
         let leftButotn  = UIButton.init(frame: CGRect(x: 0, y: 100, width: 44, height: 44))
         leftButotn.setTitle("left", for: UIControlState.normal)

@@ -11,11 +11,19 @@ import UIKit
 class ViewController: UIViewController {
 
     var viewTag : NSString?
+    var button : UIButton?
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.view.isUserInteractionEnabled = true
         view.backgroundColor = UIColor.white
+        
+        button = UIButton.init(frame: CGRect(x: 0, y: 100, width: 40, height: 40))
+        button?.setTitle("push", for: UIControlState.normal)
+        button?.backgroundColor = UIColor.blue;
+        button?.addTarget(self, action: #selector(leftAction(_:)), for: .touchUpInside)
+        self.view.addSubview(button!)
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -40,6 +48,10 @@ class ViewController: UIViewController {
     
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
+    }
+    
+    @objc private func leftAction(_ sender: UIButton) {
+        self.navigationController?.pushViewController(ViewController.init(), animated: true)
     }
 }
 

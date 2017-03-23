@@ -61,7 +61,7 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
         return view
     }()
     
-    public var screenEdgePanGestureEnabled = true
+    public var swipeEnabled = true
     
     public private(set) lazy var screenEdgePanGesture: UIScreenEdgePanGestureRecognizer = {
         let gesture = UIScreenEdgePanGestureRecognizer(
@@ -117,6 +117,7 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
             
             guard let mainViewController = mainViewController else { return }
             addChildViewController(mainViewController)
+            mainViewController.didMove(toParentViewController: self)
             
             mainViewController.view.translatesAutoresizingMaskIntoConstraints = false
             view.insertSubview(mainViewController.view, at: 0)
@@ -153,6 +154,8 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
             
             guard let leftViewController = leftViewController else { return }
             addChildViewController(leftViewController)
+            leftViewController.didMove(toParentViewController: self)
+            
             
             leftViewController.view.translatesAutoresizingMaskIntoConstraints = false
             leftContaienrView.addSubview(leftViewController.view)
@@ -190,6 +193,7 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
             
             guard let rightViewController = rightViewController else { return }
             addChildViewController(rightViewController)
+            rightViewController.didMove(toParentViewController: self)
             
             rightViewController.view.translatesAutoresizingMaskIntoConstraints = false
             rightContainerView.addSubview(rightViewController.view)
@@ -318,13 +322,34 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
         displayingViewController?.endAppearanceTransition()
     }
     
-    // We will manually call `mainViewController` or `drawerViewController`'s
-    // view appearance methods.
     override open var shouldAutomaticallyForwardAppearanceMethods: Bool {
         get {
             return false
         }
     }
+    
+    open override var childViewControllerForStatusBarStyle: UIViewController? {
+        switch self._state {
+        case .left:
+            return self.leftViewController
+        case .center:
+            return self.mainViewController
+        case .right:
+            return self.rightViewController
+        }
+    }
+    
+    open override var childViewControllerForStatusBarHidden: UIViewController? {
+        switch self._state {
+        case .left:
+            return self.leftViewController
+        case .center:
+            return self.mainViewController
+        case .right:
+            return self.rightViewController
+        }
+    }
+    
     
     /**************************************************************************/
     // MARK: - Public Method
@@ -402,7 +427,7 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
     /**************************************************************************/
     
     final func handlePanGesture(_ sender: UIPanGestureRecognizer) {
-        if sender.state == .began {
+       if sender.state == .began {
             _panStartLocation = sender.location(in: view)
             _constraitStartConstant = _leftTrailingConstraint.constant
         }
@@ -414,6 +439,13 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
         let viewWidht       = self.view.bounds.size.width
         let velocity        = sender.velocity(in: view)
         let velocityThres   = CGFloat(400.0)
+        
+        if self.drawerState == .left && delta > 0 {
+            return
+        }
+        else if self.drawerState == .right && delta < 0 {
+            return;
+        }
         
         constant = min(max(_constraitStartConstant + delta, -viewWidht), viewWidht)
         _leftTrailingConstraint.constant = constant
@@ -436,7 +468,6 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
         default:
             break
         }
-        
     }
     
     private func isViewVisiable(_ view: UIView) -> Bool {
@@ -456,13 +487,13 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
     /**************************************************************************/
     
     public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldReceive touch: UITouch) -> Bool {
-        switch gestureRecognizer {
-        case panGesture:
-            return true
-        case screenEdgePanGesture:
-            return screenEdgePanGestureEnabled ? true : false
-        default:
-            return false
+        if self.displayingViewController is UINavigationController {
+            let vc = self.displayingViewController as! UINavigationController
+            if vc.viewControllers.count > 1 {
+                return false
+            }
         }
+        
+        return self.swipeEnabled;
     }
 }

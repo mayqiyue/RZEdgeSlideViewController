@@ -29,13 +29,13 @@
 
 /* Begin PBXFileReference section */
 		026541D70DC6A195FB8B8027 /* Pods-RZEdgeSlideViewController_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RZEdgeSlideViewController_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-RZEdgeSlideViewController_Example/Pods-RZEdgeSlideViewController_Example.release.xcconfig"; sourceTree = "<group>"; };
-		0E00C41EDE602FBD05497C4A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		0E00C41EDE602FBD05497C4A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		0EE813D952D8240AD4EE4E25 /* Pods-RZEdgeSlideViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RZEdgeSlideViewController_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RZEdgeSlideViewController_Example/Pods-RZEdgeSlideViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		1F30FC7DE26B6ACBAFB64146 /* Pods-RZEdgeSlideViewController_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RZEdgeSlideViewController_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-RZEdgeSlideViewController_Tests/Pods-RZEdgeSlideViewController_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		2A7CC2E24ECF5F93DC35124A /* Pods-RZEdgeSlideViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RZEdgeSlideViewController_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-RZEdgeSlideViewController_Tests/Pods-RZEdgeSlideViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		2BF00B2CB80BF293751CF8C4 /* Pods_RZEdgeSlideViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RZEdgeSlideViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		40425793BD7F71C2F1A9758F /* Pods_RZEdgeSlideViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RZEdgeSlideViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		515CE94318F0C83136D77C18 /* RZEdgeSlideViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RZEdgeSlideViewController.podspec; path = ../RZEdgeSlideViewController.podspec; sourceTree = "<group>"; };
+		515CE94318F0C83136D77C18 /* RZEdgeSlideViewController.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RZEdgeSlideViewController.podspec; path = ../RZEdgeSlideViewController.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RZEdgeSlideViewController_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RZEdgeSlideViewController_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -46,7 +46,7 @@
 		607FACE51AFB9204008FA782 /* RZEdgeSlideViewController_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RZEdgeSlideViewController_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		963A00AE2C7BC76F73EC6FCE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		963A00AE2C7BC76F73EC6FCE /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +215,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = A4ZY6X2WCR;
 						LastSwiftMigration = 0820;
 					};
 					607FACE41AFB9204008FA782 = {
@@ -496,6 +497,7 @@
 			baseConfigurationReference = 0EE813D952D8240AD4EE4E25 /* Pods-RZEdgeSlideViewController_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A4ZY6X2WCR;
 				INFOPLIST_FILE = RZEdgeSlideViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
@@ -510,6 +512,7 @@
 			baseConfigurationReference = 026541D70DC6A195FB8B8027 /* Pods-RZEdgeSlideViewController_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = A4ZY6X2WCR;
 				INFOPLIST_FILE = RZEdgeSlideViewController/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
