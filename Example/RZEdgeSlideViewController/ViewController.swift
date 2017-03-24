@@ -15,8 +15,10 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.title = "Title"
         self.view.isUserInteractionEnabled = true
         view.backgroundColor = UIColor.white
+        self.navigationController?.hidesBarsOnSwipe = true;
         
         button = UIButton.init(frame: CGRect(x: 0, y: 100, width: 40, height: 40))
         button?.setTitle("push", for: UIControlState.normal)

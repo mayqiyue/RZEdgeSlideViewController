@@ -9,12 +9,11 @@
 import UIKit
 
 @objc public protocol RZEdgeSlideViewControllerDelegate {
-    @objc optional func edgeSlideViewController(_ viewController: RZEdgeSlideViewController, willChange state: RZEdgeSlideViewController.DrawerState)
-    @objc optional func edgeSlideViewController(_ viewController: RZEdgeSlideViewController, didChange state: RZEdgeSlideViewController.DrawerState)
-    
-    @objc optional func edgeSlideViewController(_ viewController: RZEdgeSlideViewController,
-                                                currentState state: RZEdgeSlideViewController.DrawerState,
-                                                percent: CGFloat);
+    @objc optional func edgeSlideViewController(_ viewController: RZEdgeSlideViewController, willChangeTo state: RZEdgeSlideViewController.DrawerState)
+    @objc optional func edgeSlideViewController(_ viewController: RZEdgeSlideViewController, didChangeTo state: RZEdgeSlideViewController.DrawerState)
+   
+    // changedePercent: {-1.0 ~ 1.0}; -1.0 means switch to DrawerState.left, 0.0 means .center 1.0 means .right
+    @objc optional func edgeSlideViewController(_ viewController: RZEdgeSlideViewController, changedePercent: CGFloat); 
 }
 
 open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDelegate {
@@ -398,7 +397,7 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
             }
         }
         
-        self.delegate?.edgeSlideViewController?(self, willChange: state);
+        self.delegate?.edgeSlideViewController?(self, willChangeTo: state);
         UIView.animate(withDuration: duration,
                        delay: 0,
                        options: .curveEaseOut,
@@ -417,7 +416,7 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
                 let vc : UIViewController = obj as! UIViewController
                 vc.endAppearanceTransition()
             }
-            self.delegate?.edgeSlideViewController?(self, didChange: state)
+            self.delegate?.edgeSlideViewController?(self, didChangeTo: state)
             self._state = state;
         }
     }
@@ -436,33 +435,33 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
         let threshold       = CGFloat(0.5)
         var constant        : CGFloat
         let drawerState     : DrawerState
-        let viewWidht       = self.view.bounds.size.width
+        let viewWidth       = self.view.bounds.size.width
         let velocity        = sender.velocity(in: view)
         let velocityThres   = CGFloat(400.0)
         
-        if self.drawerState == .left && delta > 0 {
-            return
+        constant = min(max(_constraitStartConstant + delta, -viewWidth), viewWidth)
+        _leftTrailingConstraint.constant = constant
+        
+        if constant >= viewWidth && delta < 0 {
+            return;
         }
-        else if self.drawerState == .right && delta < 0 {
+        else if constant <= -viewWidth && delta > 0 {
             return;
         }
         
-        constant = min(max(_constraitStartConstant + delta, -viewWidht), viewWidht)
-        _leftTrailingConstraint.constant = constant
-        
         if velocity.x < -velocityThres {
-            constant -= viewWidht*threshold;
+            constant -= viewWidth*threshold;
         }
         else if velocity.x > velocityThres {
-            constant += viewWidht*threshold;
+            constant += viewWidth*threshold;
         }
         
-        drawerState = constant < -viewWidht * threshold ? .right : constant > viewWidht*threshold ? .left : .center
+        drawerState = constant < -viewWidth * threshold ? .right : constant > viewWidth*threshold ? .left : .center
         
         switch sender.state {
         case .changed:
-            let percent = CGFloat(min(max(round(fabs(delta)/viewWidht * 100.0) / 100, 0.01), 0.99))
-            self.delegate?.edgeSlideViewController?(self, currentState: self.drawerState, percent: percent)
+            let percent = CGFloat(round(-_leftTrailingConstraint.constant/viewWidth * 100.0) / 100)
+            self.delegate?.edgeSlideViewController!(self, changedePercent: percent)
         case .ended, .cancelled:
             setDrawerState(drawerState, animated: true)
         default:

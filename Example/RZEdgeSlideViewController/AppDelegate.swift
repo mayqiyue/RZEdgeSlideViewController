@@ -99,15 +99,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RZEdgeSlideViewController
         self.drawVC?.setDrawerState(.right, animated: true)
     }
     
-    public func edgeSlideViewController(_ viewController: RZEdgeSlideViewController, currentState state: RZEdgeSlideViewController.DrawerState, percent: CGFloat) {
-        print(" edgeSlideViewController currentState is: \(state.rawValue) percnet is \(percent)")
+    public func edgeSlideViewController(_ viewController: RZEdgeSlideViewController, changedePercent: CGFloat) {
+        print(" edgeSlideViewController percnet is \(changedePercent)")
     }
     
-    public func edgeSlideViewController(_ viewController: RZEdgeSlideViewController, willChange state: RZEdgeSlideViewController.DrawerState) {
+    public func edgeSlideViewController(_ viewController: RZEdgeSlideViewController, didChangeTo state: RZEdgeSlideViewController.DrawerState) {
         print(" edgeSlideViewController will change to state \(state.rawValue)")
     }
     
-    public func edgeSlideViewController(_ viewController: RZEdgeSlideViewController, didChange state: RZEdgeSlideViewController.DrawerState) {
+    public func edgeSlideViewController(_ viewController: RZEdgeSlideViewController, willChangeTo state: RZEdgeSlideViewController.DrawerState) {
         print(" edgeSlideViewController did change to state \(state.rawValue)")
     }
 }
