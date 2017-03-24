@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'RZEdgeSlideViewController'
-  s.version          = '0.3.0'
+  s.version          = '0.4.0'
   s.summary          = 'This is a SnapChat 2017 swipe style view controller. inspied by SnapChat'
 
 # This description is used to generate tags and improve search results.
