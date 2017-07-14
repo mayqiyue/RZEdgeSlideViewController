@@ -418,6 +418,7 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
             }
             self.delegate?.edgeSlideViewController?(self, didChangeTo: state)
             self._state = state;
+            self.setNeedsStatusBarAppearanceUpdate()
         }
     }
     
