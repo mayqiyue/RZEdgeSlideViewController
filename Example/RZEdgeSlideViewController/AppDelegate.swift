@@ -37,19 +37,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate, RZEdgeSlideViewController
         drawerController.leftViewController = UINavigationController.init(rootViewController: leftVC)
         drawerController.rightViewController = UINavigationController.init(rootViewController: rightVC)
         
-        let leftButotn  = UIButton.init(frame: CGRect(x: 0, y: 100, width: 44, height: 44))
+        let leftButotn  = UIButton.init(frame: CGRect(x: 10, y: 100, width: 60, height: 44))
         leftButotn.setTitle("left", for: UIControlState.normal)
         leftButotn.backgroundColor = UIColor.red;
         leftButotn.addTarget(self, action: #selector(leftAction(_:)), for: .touchUpInside)
         mainViewController.view.addSubview(leftButotn)
         
-        let centerButton  = UIButton.init(frame: CGRect(x: 50, y: 100, width: 44, height: 44))
+        let centerButton  = UIButton.init(frame: CGRect(x: 80, y: 100, width: 60, height: 44))
         centerButton.setTitle("center", for: UIControlState.normal)
         centerButton.backgroundColor = UIColor.red;
         centerButton.addTarget(self, action: #selector(centerAction(_:)), for: .touchUpInside)
         mainViewController.view.addSubview(centerButton)
         
-        let rightButton  = UIButton.init(frame: CGRect(x: 100, y: 100, width: 44, height: 44))
+        let rightButton  = UIButton.init(frame: CGRect(x: 150, y: 100, width: 60, height: 44))
         rightButton.setTitle("right", for: UIControlState.normal)
         rightButton.backgroundColor = UIColor.red;
         rightButton.addTarget(self, action: #selector(rightAction(_:)), for: .touchUpInside)

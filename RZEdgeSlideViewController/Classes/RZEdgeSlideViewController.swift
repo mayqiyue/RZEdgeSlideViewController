@@ -426,7 +426,7 @@ open class RZEdgeSlideViewController : UIViewController, UIGestureRecognizerDele
     // MARK: - Private Method
     /**************************************************************************/
     
-    final func handlePanGesture(_ sender: UIPanGestureRecognizer) {
+    @objc final func handlePanGesture(_ sender: UIPanGestureRecognizer) {
        if sender.state == .began {
             _panStartLocation = sender.location(in: view)
             _constraitStartConstant = _leftTrailingConstraint.constant

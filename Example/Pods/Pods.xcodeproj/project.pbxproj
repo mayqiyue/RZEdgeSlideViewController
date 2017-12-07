@@ -30,8 +30,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		10520D312071660DDD817BA8F7D08B8B /* Pods_RZEdgeSlideViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RZEdgeSlideViewController_Tests.framework; path = "Pods-RZEdgeSlideViewController_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
-		1375BF1308981A6804353168E17CDB6F /* Pods-RZEdgeSlideViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RZEdgeSlideViewController_Tests.modulemap"; sourceTree = "<group>"; };
+		10520D312071660DDD817BA8F7D08B8B /* Pods_RZEdgeSlideViewController_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RZEdgeSlideViewController_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1375BF1308981A6804353168E17CDB6F /* Pods-RZEdgeSlideViewController_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RZEdgeSlideViewController_Tests.modulemap"; sourceTree = "<group>"; };
 		21157676C8A5C437D6D28CCC8C90F14B /* Pods-RZEdgeSlideViewController_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RZEdgeSlideViewController_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2872CEE9BCF0079D93258919156F5F4D /* Pods-RZEdgeSlideViewController_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-RZEdgeSlideViewController_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2FAE808E7D96943534FE8AE08E651331 /* Pods-RZEdgeSlideViewController_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RZEdgeSlideViewController_Tests-umbrella.h"; sourceTree = "<group>"; };
@@ -47,20 +47,20 @@
 		6D811025A03A0A5309C03CBBFFD3143C /* RZEdgeSlideViewController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = RZEdgeSlideViewController.swift; sourceTree = "<group>"; };
 		72EF5028F5E41AB5075FC12E1D828C23 /* Pods-RZEdgeSlideViewController_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RZEdgeSlideViewController_Example-frameworks.sh"; sourceTree = "<group>"; };
 		8928B71053073389E35B7A24114A5899 /* Pods-RZEdgeSlideViewController_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RZEdgeSlideViewController_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9654504096327B172E6B20CDC7AA6076 /* RZEdgeSlideViewController-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RZEdgeSlideViewController-dummy.m"; sourceTree = "<group>"; };
 		982FFBEC4083B0798AD4EBAD9780CE49 /* Pods-RZEdgeSlideViewController_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-RZEdgeSlideViewController_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		A618D3142D42F81EF6552ECAB3FA89B2 /* Pods-RZEdgeSlideViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-RZEdgeSlideViewController_Example.modulemap"; sourceTree = "<group>"; };
+		A618D3142D42F81EF6552ECAB3FA89B2 /* Pods-RZEdgeSlideViewController_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-RZEdgeSlideViewController_Example.modulemap"; sourceTree = "<group>"; };
 		A8803D556F54A1C09488D3BE54E6353A /* Pods-RZEdgeSlideViewController_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RZEdgeSlideViewController_Example-resources.sh"; sourceTree = "<group>"; };
 		AF22581C9100CF2F66E153BA074D8BF3 /* RZEdgeSlideViewController-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RZEdgeSlideViewController-prefix.pch"; sourceTree = "<group>"; };
 		BD734C1777167781869F45EB1E119E4A /* Pods-RZEdgeSlideViewController_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-RZEdgeSlideViewController_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		C1C27D16E376AC7D1258BEBA84F6394D /* Pods-RZEdgeSlideViewController_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-RZEdgeSlideViewController_Tests-resources.sh"; sourceTree = "<group>"; };
-		C47FE562EFD1337AF8E6501E28524232 /* Pods_RZEdgeSlideViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_RZEdgeSlideViewController_Example.framework; path = "Pods-RZEdgeSlideViewController_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		C47FE562EFD1337AF8E6501E28524232 /* Pods_RZEdgeSlideViewController_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RZEdgeSlideViewController_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		E133D3AE22124E5DE63D842C8BDEB5E2 /* RZEdgeSlideViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RZEdgeSlideViewController.framework; path = RZEdgeSlideViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E133D3AE22124E5DE63D842C8BDEB5E2 /* RZEdgeSlideViewController.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = RZEdgeSlideViewController.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E84B04E47DCBDB7FE435263CFB20C873 /* Pods-RZEdgeSlideViewController_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RZEdgeSlideViewController_Example-dummy.m"; sourceTree = "<group>"; };
 		EB69484199A54FDCA1E072E51D664EBD /* Pods-RZEdgeSlideViewController_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-RZEdgeSlideViewController_Tests-dummy.m"; sourceTree = "<group>"; };
-		F2D6FD174B895970CFACD099EFC8B663 /* RZEdgeSlideViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = RZEdgeSlideViewController.modulemap; sourceTree = "<group>"; };
+		F2D6FD174B895970CFACD099EFC8B663 /* RZEdgeSlideViewController.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = RZEdgeSlideViewController.modulemap; sourceTree = "<group>"; };
 		F6523DFAD079DA5A85EB7CFD2329CEE6 /* Pods-RZEdgeSlideViewController_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-RZEdgeSlideViewController_Example-umbrella.h"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,7 +107,6 @@
 			children = (
 				DDE64E060E6AD87F439E2CFC8FAE4962 /* Classes */,
 			);
-			name = RZEdgeSlideViewController;
 			path = RZEdgeSlideViewController;
 			sourceTree = "<group>";
 		};
@@ -220,7 +219,6 @@
 			children = (
 				6D811025A03A0A5309C03CBBFFD3143C /* RZEdgeSlideViewController.swift */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -313,7 +311,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
-				LastUpgradeCheck = 0700;
+				LastUpgradeCheck = 0920;
+				TargetAttributes = {
+					049BDF5D5408DD11AEDCA6D51BC1AD3E = {
+						LastSwiftMigration = 0920;
+					};
+				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -397,7 +400,8 @@
 				PRODUCT_NAME = RZEdgeSlideViewController;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -430,7 +434,8 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -482,19 +487,29 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
@@ -508,6 +523,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SYMROOT = "${SRCROOT}/../build";
 				VALIDATE_PRODUCT = YES;
 			};
@@ -522,20 +538,30 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_DEBUG=1",
